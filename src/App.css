@@ -1,38 +1,244 @@
-.App {
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin:0;
+}
+
+h1{  
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-size: 40px;
 }
+p{
+  text-align: center;
+  font-size: 14px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.menu{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:25px;
+}
+.menu button{
+  background-color: transparent;
+  border: 1px solid pink;
+  padding:10px;
+  border-radius: 20px;
+  margin-right: 20px;
+  width:150px;
+}
+.header{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+  width:50%;
+  margin:40px auto;
+}
+.header button{
+  background-color: rgb(241, 79, 106);
+  color:white;
+  border: 1px solid rgb(199, 33, 60);
+  padding:10px;
+  width: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+.img{
+  width: 60%;
+  margin:100px auto;
+
+}
+.img img{
+  width:800px;
+}
+.users{
+  display: flex;
+  justify-content: space-between;
+  width:60%;
+  margin:40px auto;
+
+}
+.grow{
+
+ 
+  display:flex;
+ 
+  align-items: center;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  background-size: cover;
+width:80%;
+margin:40px auto;
+ 
+}
+.grow div img{
+  width:400px;
+}
+.flow{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:80%;
+  margin:0 auto;
+}
+.flow img{
+  width:400px;
+}
+footer{
+  background-color: rgb(2, 37, 61);
+  margin-top: 150px;
+}
+footer .footer{
+padding:20px;
+ height:250px;
+ color:white;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}  
+footer input{
+  padding:10px;
+}
+footer button{
+  background-color: rgb(197, 26, 55);
+  color:white;
+  padding:10px;
+  border:none;
+}
+footer .fot1{
+  display: flex;  flex-direction: column; width:30%; margin:20px
+}
+footer .fot2{
+  width:30%; margin:35px
 }
 
-.App-link {
-  color: #61dafb;
+.ready{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ready button{
+  background-color: rgb(206, 58, 83);
+  border:1px solid rgb(170, 55, 75);
+  padding:10px;
+  width:250px;
+  border-radius: 20px;
+  color:white;
+  cursor: pointer;
+  box-shadow: 3px 2px 5px 2px rgba(0,0,0,0.75);
+}
+.your{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:80%;
+  margin:50px auto;
+}
+.your img{
+  width:400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media(max-width:500px){
+  .header{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+      width:80%;
+      margin:40px auto;
   }
-  to {
-    transform: rotate(360deg);
+  .menu button{
+      background-color: transparent;
+      border: 1px solid pink;
+      padding:10px;
+      border-radius: 20px;
+      margin-right: 10px;
+      width:100px;
   }
+  .menu img{
+    width:100px;
+  }
+  .your img{
+    width:250px;
+  }
+  .grow div img{
+    width:250px;
+  }
+  .header button{
+      background-color: rgb(241, 79, 106);
+      color:white;
+      border: 1px solid rgb(199, 33, 60);
+      padding:10px;
+      width: 200px;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+  }
+  .img{
+      width: 50%;
+    
+  }
+  .img img{
+      width:250px;
+  }
+  .grow{
+     
+      display:flex;
+flex-direction: column;      
+      align-items: center;
+      background-repeat: no-repeat;
+     
+      background-size: cover;
+    
+     
+  }
+  .flow{
+      display:flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      width:80%;
+      margin:0 auto;
+  }
+  .flow img{
+    width:250px;
+  }
+  .your{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      width:80%;
+      margin:50px auto;
+  }
+  .users{
+      display: flex;
+      justify-content: space-between;
+      width:30%;
+      margin:auto;
+    
+      flex-direction: column;
+  
+  }
+ footer .footer{
+   height:700px;
+   display: grid;
+   grid-template-columns: auto;
+ }
+ .footer .fot1{
+   width:40%;
+ }
+ .footer .fot2{
+   width:40%;
+   margin-top:-10px;
+ }
 }
