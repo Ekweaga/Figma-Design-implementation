@@ -8,7 +8,9 @@ import growtoget from './images/illustration-grow-together.svg'
 import flowcon from './images/illustration-flowing-conversation.svg'
 import urusers from "./images/illustration-your-users.svg"
 import phonelogo from "./images/icon-phone.svg"
-import emaillogo from "./images/icon-email.svg"
+import emaillogo from "./images/icon-email.svg";
+import boxlogo from './images/illustration-box-desktop.svg'
+import women from './images/illustration-woman-online-desktop.svg'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import {useEffect} from 'react'
@@ -88,6 +90,29 @@ function App() {
               </h1></div>
               <div data-aos="zoom-in">
                   <button>Get Started For Free</button>
+              </div>
+          </div>
+          <div  className='women'>
+              <div data-aos="zoom-in"><img src={women}/></div>
+              <div className='faq' data-aos="slide-left">
+                  <h1>
+                      FAQ
+                  </h1>
+                  <ul>
+                      <li>
+                          How many members can i invite ?
+                      </li>
+                      <li>
+                          What the maximum size file load ?
+                      </li>
+
+                      <li>
+                          Can I cancel my subscription ?
+                      </li>
+                      <li>
+                          Do you provide additional support ?
+                      </li>
+                  </ul>
               </div>
           </div>
           <footer>

@@ -144,8 +144,27 @@ footer .fot2{
 .your img{
   width:400px;
 }
-
-
+.women{
+  margin:50px auto;
+  width:80%;
+  display: flex;
+  box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+  padding:35px;
+}
+.women .faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:25px;
+}
+.women .faq li{
+  list-style: none;
+  margin:10px;
+}
+.women img{
+  margin-left:-85px;
+}
 @media(max-width:500px){
   .header{
       display:flex;
@@ -184,11 +203,15 @@ footer .fot2{
       box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
   }
   .img{
-      width: 50%;
-    
+      width: 40%;
+      
+      margin-bottom: 60px;
   }
   .img img{
-      width:250px;
+      width:350px;
+      height:500px;
+      margin-left:-90px;
+     
   }
   .grow{
      
@@ -240,5 +263,23 @@ flex-direction: column;
  .footer .fot2{
    width:40%;
    margin-top:-10px;
+   margin-left:10px;
+ }
+ .footer .fot2 button{
+   margin-top:20px;
+   width:180px;
+ }
+ .women{
+  margin:50px auto;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+  margin-top:160px;
+}
+ .women img{
+   width:300px;
+   margin-left:0px;
+   margin-top:-120px;
  }
 }
