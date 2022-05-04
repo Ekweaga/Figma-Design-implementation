@@ -21,15 +21,20 @@ function App() {
       },[])
   return (
    
-    <><div class="menu">
+    <>
+    <div className="hee">
+        <div class="menu">
           <div>
               <img src={logo}/>
               </div>
           <div><button>Get Started</button></div>
-      </div><div class="header">
+      </div>
+      <div className='mainheader'>
+      
+      <div class="header">
               <div>
                   <h1>Build The Community Your Fans Love</h1>
-                  <p>Huddle re-imagines the way we build communities. You have a voice, but so your audience
+                  <p >Huddle re-imagines the way we build communities. You have a voice, but so your audience
                       . Create connections with your users as you engage in genuine discussion
                   </p>
               </div>
@@ -37,12 +42,16 @@ function App() {
                   <button>Start Free trial</button>
               </div>
 
-          </div><div class="img">
+          </div>
+          <div class="img">
               <div>
                   <img src={screenlogo}/>
                   </div>
-          </div><div class="users">
-              <div data-aos="fade-in">
+          </div>
+          </div>
+          </div>
+          <div class="users">
+              <div data-aos="fade-in" >
                   <img src={commlogo} />
                       <h2>1.5k+</h2>
                       <span>Community members</span>
@@ -84,7 +93,8 @@ function App() {
               <div data-aos="zoom-in">
                   <img src={urusers}/>
                   </div>
-          </div><div class="ready">
+          </div>
+          <div class="ready">
               <div><h1>
                   Be Ready To Build Your Community
               </h1></div>
@@ -115,7 +125,15 @@ function App() {
                   </ul>
               </div>
           </div>
+        
           <footer>
+          <div className='blog' data-aos="zoom-in">
+              <div className='blog1'>
+                  <h1>Get to know people</h1>
+                  <div><button>Create Account</button></div>
+              </div>
+
+          </div>
               <div class="footer">
                   <div class="fot1" data-aos="fade-in">
                       <div style={{display: 'flex', alignItems: 'center', margin:'0'}}> <img src={messlogo} style={{width:'30px',height:'30px'}}/> <h1>Huddle</h1></div>
